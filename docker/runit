@@ -1,0 +1,23 @@
+#!/bin/bash -p
+
+# command starts with mapping passwd and group files
+cmd=(docker run -v /etc/passwd:/etc/passwd:ro -v /etc/group:/etc/group:ro)
+# add home directory:
+myhome=$(getent passwd $(id -nu) | awk -F: '{print $6}')
+cmd+=(-v $myhome:$myhome)
+# add userid and groupid mappings:
+cmd+=(-u $(id -u):$(id -g))
+# run in interractive mode
+cmd+=(-i -t)
+# start in current directory (assume a subdir of $HOME)
+cmd+=(-w "$(pwd)")
+
+if [ "$#" != 0 ]; then
+	# then pass through any other arguments:
+	cmd+=("$@")
+else
+	# default to public image if none provided
+	cmd+=(vdanjean/nachos)
+fi
+
+exec "${cmd[@]}"

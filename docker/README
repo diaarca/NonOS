@@ -1,0 +1,10 @@
+Docker support is provided 'as-is'
+It provides a image that should contain anything required to compile/run/debug Nachos.
+It does NOT contains the Nachos source code.
+
+The easiest way to use it is to run it with the provided 'runit' script
+using the public image 'vdanjean/nachos' by running something like:
+$ ...path-to.../runit
+
+You should get a shell inside the docker image, running as your current user,
+with your home available and not changing the current working directory.

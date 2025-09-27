@@ -1,0 +1,3 @@
+Hello there! This is Thomas and I am trying to send a very long message in order to check
+whether it gets split correctly or not. I would really like to know because messages can
+get extremely long, since there is no more message size limit now.

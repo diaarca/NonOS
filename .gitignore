@@ -1,0 +1,6 @@
+code/build/*
+code/bin/coff2noff
+code/bin/*.o
+code/bin/.*.d
+code/bin/.sources-checked
+.DS_Store
