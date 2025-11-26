@@ -1,3 +1,13 @@
+# NonOS
+This is a university project (in collaboration with [Maxime Bodart](https://github.com/Maximeya), [Alexis Detroyat]() and [Thomas Civade](https://github.com/Luminosaa)) that aims to implement on operating system from zero including system calls, virtual memory, threads/processes file system and network primitives.
+
+This project is originally based on the [NachOS](https://en.wikipedia.org/wiki/Not_Another_Completely_Heuristic_Operating_System) project.
+
+All implemented features are discribed in `report.pdf`.
+
+Below the original NachOS README file:
+
+## NachOS
 The provided Nachos sources are a modified version from the (very old) original
 nachos project. This is why there are some differences between the actual state
 and some information in old documents.
@@ -18,7 +28,7 @@ The build system allows one to compile different subset of features.
 All code is build into the code/build/ subdirectory.
 
 For each Nachos subset of features (this is called a flavor):
-- the flavor is named (initialy, there are 5 provided flavors : filesys,
+- the flavor is named (initialy, there are 6 provided flavors : filesys,
   network, threads, userprog and vm)
 - for each flavor named 'name', you can find:
   - 'name'-'sourcefilename'.o: the object files used to create the kernel
@@ -44,11 +54,11 @@ All source code is in the code/ subdirectory. Here are several subdirectories:
 - threads/
 - userprog/
 - vm/
-  These are the 5 subdirectories where source files for Nachos kernel are
+  These are the 6 subdirectories where source files for Nachos kernel are
   found. You will have to modify them and to create new ones.
   Depending on the chosen flavors, not all source files are used into the
   various nachos-'flavor' binaries (See "Build System" above)
-    All these files are compiled with g++ natively (in x86 32 bits however)
+    All these files are compiled with g++ natively (in x87 32 bits however)
 - test/
   This is where all user programs are written. New files are automatically
   compiled as new programs.
