@@ -6,7 +6,6 @@ This project is originally based on the [NachOS](https://en.wikipedia.org/wiki/N
 All implemented features are discribed in `report.pdf`.
 
 Below the original NachOS README file:
-
 ## NachOS
 The provided Nachos sources are a modified version from the (very old) original
 nachos project. This is why there are some differences between the actual state
