@@ -1,5 +1,5 @@
 # NonOS
-This is a university project (in collaboration with [Maxime Bodart](https://github.com/Maximeya), [Alexis Detroyat]() and [Thomas Civade](https://github.com/Luminosaa)) that aims to implement on operating system from zero including system calls, virtual memory, threads/processes file system and network primitives.
+This is a university project (in collaboration with [Maxime Bodart](https://github.com/Maximeya), [Alexis Detroyat](https://github.com/m2mosig-detroyaa) and [Thomas Civade](https://github.com/Luminosaa)) that aims to implement on operating system from zero including system calls, virtual memory, threads/processes file system and network primitives.
 
 This project is originally based on the [NachOS](https://en.wikipedia.org/wiki/Not_Another_Completely_Heuristic_Operating_System) project.
 
